@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
+import { MDBContainer} from "mdbreact";
 import './App.css'
 import Ajout from './components/Ajout'
+import Carte from './components/Carte'
 
 
 
@@ -18,20 +23,13 @@ var App = () => {
   
 
   return (
-    <div className="container">      
-      <div className="flex-row">
-        <div className="flex-large"> 
+    <MDBContainer>
+      <Ajout addProduct={addProduct} setCount={setCount} count={count}/>                
+      <Carte products={products} /*deleteProduct={deleteProduct} editProduct={editProduct}*/ />            
+    </MDBContainer> 
           
-          <Ajout addProduct={addProduct} setCount={setCount} count={count}/>       
           
-                
-          {/* <Affichage products={products} deleteProduct={deleteProduct} editProduct={editProduct} /> */}
-        </div>
-      </div>
-
-      
-
-    </div>
+        
 
   )
 }
