@@ -1,0 +1,11 @@
+#comment{
+    word-wrap: break-word;
+  }
+
+#com{
+  color: rgb(0, 174, 255);
+  margin-top: 16px;
+  float: right;
+  font-family: bold;
+  cursor: pointer;
+}

@@ -10,7 +10,7 @@ import Carte from './components/Carte'
 
 
 var App = () => {
-  //ajout
+  //ajout produit
   const productsData = []
   const [products, setProducts] = useState(productsData)
   const [count, setCount] = useState(0)
@@ -20,17 +20,12 @@ var App = () => {
 		setProducts([ ...products, product ])
   }
   
-  
 
   return (
     <MDBContainer>
       <Ajout addProduct={addProduct} setCount={setCount} count={count}/>                
-      <Carte products={products} /*deleteProduct={deleteProduct} editProduct={editProduct}*/ />            
+      <Carte products={products}/>         
     </MDBContainer> 
-          
-          
-        
-
   )
 }
 

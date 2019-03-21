@@ -26,6 +26,9 @@ label{
     text-align: center;
 }
 
+#erreur{
+    color: red;
+}
 
 input[type="file"] {
     display: none;
