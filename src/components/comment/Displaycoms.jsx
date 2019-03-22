@@ -1,17 +1,16 @@
-import React from 'react';
+import React from 'react'
 
-const Displaycoms = props => ( 
-  <center>
-    <table>
-        {props.comments.length > 0 ? (                
-            props.comments.map(comment => (
-                <tr key={comment.id}>
-                    <td> {comment.coms} </td>
-                </tr>  
-                ))
-      ) : ''} 
-    </table>  
-  </center>
+const AffCom = props =>(
+<div>
+        {props.coms.length > 0 ? (
+          props.coms.map(user => (
+                
+    <div>{user}</div>
+                
+           ))
+        ) : (
+ "")} 
+ </div>
+    
 )
-
-export default Displaycoms;
+export default AffCom

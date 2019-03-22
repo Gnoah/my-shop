@@ -1,11 +1,17 @@
 #coeur{
     color: red;
     font-size: 30px;
-    background-color: aliceblue;
+    background-color: #F7F7F7;
 }
 .card{
     width: 350px;
     margin-top: 20px;
+    height: 450px;
+}
+
+.colone{
+    padding-right:200px;
+
 }
 
 p{

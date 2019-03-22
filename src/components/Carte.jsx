@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { MDBRow, MDBCol } from "mdbreact";
 import './Carte.css'
 import Coeur from './coeur/coeur'
-import Coms from './commentaire/modal'
+import Coms from './comment/Addcoms'
 
 
 
@@ -28,13 +28,13 @@ comment.id = compt
                 
                 <MDBCol md="4" className="colone">
                 <div className="card" key={product.id}>
-                    <img src={product.fich} className="card-img-top" alt="upload images" width=" 400" height="300"></img>
+                    <img src={product.fich} className="card-img-top" alt="upload images" width=" 250" height="250"></img>
                     <div className="card-body">
                         <h5 className="card-title">{product.nom}</h5>
                         <p className="card-text">{
                             (product.desc.length > 115)?product.desc.slice(0, 113)+"...":product.desc
                             }</p>
-                        <span id="price">{product.prix}Ar</span>
+                        <span id="price">{product.prix.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g,'$1.')}Ar</span>
                     </div>
                     <div className="card-footer">
                            <Coms/>     
