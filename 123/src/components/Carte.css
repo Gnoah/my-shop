@@ -1,0 +1,42 @@
+#coeur{
+    color: red;
+    font-size: 30px;
+    background-color: aliceblue;
+}
+.card{
+    width: 350px;
+    margin-top: 20px;
+    height: 450px;
+}
+
+.colone{
+    padding-right:200px;
+
+}
+
+p{
+    font-size: 20px;
+}
+
+input[type="button"] {
+    display: none;
+    opacity: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+img{
+    width: 300px;
+}
+
+#price{
+    float: right;
+}
+
+a{
+    text-decoration: none;
+    float: right;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
