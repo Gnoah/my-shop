@@ -1,24 +1,51 @@
-button{
-    background:#F7F7F7;
+button{   
     float: right;
     margin-top: 10px;
     font-size: 25px;
+    
+    background:#F7F7F7;
     color: rgb(20, 145, 255);
     border:none;
 }
-#float{
-    float: right;
+#btcom{
+    background-color:rgb(20, 145, 255);
+    color:#F7F7F7;
+    height: 35px;
+    border-radius: 5px;
+}
+#btcom:hover{
+    background:#F7F7F7;
+    color: rgb(20, 145, 255);
+}
+
+#flot{
+    height: 25px;
+    width: 25px;
+    font-size: 14px;
+    background-color: rgb(240, 64, 64); 
+    color: white;
+  }
+  
+  #flot:hover{
+    background-color: rgb(236, 6, 6);    
+  }
+  
+
+.fermer{
+    padding: 0px !important;
+    background-color: grey;
+    height: 40px;
 }
 
 #bt{
     background-color: rgb(187, 235, 235);
     border-color: rgb(130, 148, 148);
     width: 450px;
-    height: 100;
-    border-radius: 8px;
 }
 
 #entre{
-    width: 200px;
+    width: 255px;
 }
-
+#io{
+    padding-bottom: 10px;
+}
