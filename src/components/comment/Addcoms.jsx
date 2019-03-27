@@ -24,7 +24,10 @@ const Comment= props => {
                     customUI: ({ onClose }) => {
                       return (
                         <div id="bt" className='custom-ui'>
-                          <button id="flot" onClick={onClose}>X</button>
+                          <div className="fermer">
+                            <button id="flot" onClick={onClose}>X</button>
+                          </div>
+                          <div>
                           <form id='coms'
                             onSubmit={
                               (b)=>{
@@ -41,9 +44,10 @@ const Comment= props => {
                               
                               <input name='input' type="text" id='entre' placeholder={coms.commentaire}/>
 
-                              <button >comment</button>
+                              <button id="com">comment</button>
                               
                           </form>
+                          </div>
                           <div id='io'></div>
                           <AffCom coms={coms}/>
                         </div>

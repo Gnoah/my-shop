@@ -5,7 +5,7 @@ const AffCom = props =>(
         {props.coms.length > 0 ? (
           props.coms.map(user => (
                 
-    <div>{user}</div>
+    <div>{user}<hr/></div>
                 
            ))
         ) : (
